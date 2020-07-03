@@ -369,6 +369,9 @@ html {
 
 
 @media screen and (max-width: 1020px){
+  .media a{
+    padding: 18px; 
+  }
 nav a {
   display: none;
 }
@@ -498,7 +501,7 @@ main .desc-title p{
   
 }
 
-@media screen and (max-width:330px){
+@media screen and (max-width:500px){
   
   .hamburger{
     display: block;
@@ -579,6 +582,9 @@ main .desc-title p{
   }
     .section-3 input{
     width: 300px;
+  }
+  .media a {
+    font-size: 1em;
   }
 }
 
