@@ -14,7 +14,9 @@ header{
     height: 100vh;
     text-align: left;   
 }
-
+.section-1 h1 {
+  margin: 0 20px;
+}
 main .desc-title p{
   margin-top: 10px;
   color: #4a4a4a
