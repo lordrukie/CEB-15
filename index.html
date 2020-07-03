@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Progate CEB</title>
+    <style></style>
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
             <div class="logo">
                 <h3>Progate C-15</h3>
             </div>
-            <nav>
+            <nav class="topnav">
                 <a class="nav" href="#">Beranda</a>
                 <a class="nav" href="#team">Tim</a>
                 <a class="nav" href="#kontak">Kontak</a>
@@ -22,16 +23,31 @@
                   <a class="btn-nav-child" href="#">Daftar</a>
                   <a class="btn-nav-child" href="#">Log in</a>
                 </div>
+                <a id="burger" onclick="responsiveNav()" class="hamburger">&#9776;</a>
             </nav>
-            <a class="hamburger" href="#">&#9776;</a>
         </div>
+        <div id="mobile" class="">
+          <ul>
+            <li>
+              <a class="nav m-nav" onclick="hapusData()" href="#">Beranda</a>
+            </li>
+            <li>
+              <a class="nav m-nav" onclick="hapusData()" href="#team">Tim</a>
+            </li>
+            <li>
+              <a class="nav m-nav" onclick="hapusData()" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+          
+        </div>
+
         <div class="header-main">
             <div class="title">
             <h1>Selamat Datang di<br>Progate C-15</h1>
             <p>Progate C-15 adalah perkumpulan semasa untuk belajar bersama<br>
             Kami menawarkan pembelajaran yang komprehensif dan menyenangkan</p>
             <div class="btn">
-                <a href="#">Belajar Sekarang</a>
+                <a href="">Belajar Sekarang</a>
                 <div class="bullet">
                   <div></div>
                   <div></div>
@@ -44,12 +60,13 @@
                 <img src="img3.svg" alt="">
             </div>
         </div>
+
     </header>
     <main>
         <div class="section-1">
             <h1>Mengapa Belajar Dengan kami</h1>
             <div class="desc-title">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate eos aperiam dolore sequi iusto quis consequuntur excepturi illum vel.</p>
+              <p>Kami menyediakan media pembelajaran yang cukup mudah dipahami sehingga teman-teman dapat mengikutinya tanpa kesulitan.</p>
             </div>
             <div class="article">
                 <div class="img">
@@ -87,9 +104,9 @@
         </div>
         <div id="team"  class="section-2">
             <div class="team-wrapper">
-                <h1>Our Team</h1>
+                <h1>Team Kita</h1>
                 <div class="desc-title">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae labore maxime consectetur saepe sequi aspernatur magnam ea quasi non fugit.</p>
+                  <p>Tim ini terbentuk dengan rasa saling percaya yang kuat.</p>
                 </div>
                 <div class="flex-card">
                   <div class="team-card">
@@ -97,7 +114,7 @@
                     <img src="./arya.jpg" alt="">
                   </div>
                   <h3>Yudistira Arya<br>Mutamang</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                  <p><i>"Kode yang besar bermula dari kode yang kecil"</i></p>
                   <div class="media">
                     <a href="#"><i class="fas fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
@@ -109,7 +126,7 @@
                     <i class="fa fa-user"></i>
                   </div>
                   <h3>All Fine<br>Maulinaro</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                  <p><i>"Coba aja dulu, masalah bisa atau tidaknya belakangana aja"</i></p>
                   <div class="media">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
@@ -121,7 +138,7 @@
                     <i class="fa fa-user"></i>
                   </div>
                   <h3>La Ode<br>Mimshad</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                  <p><i>"Kalau sudah hobi mah, pasti ngerjainnya sambil enjoy :D"</i></p>
                   <div class="media">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
@@ -133,7 +150,7 @@
                     <img src="./imam.jpeg" alt="">
                   </div>
                   <h3>Iman Hartoni<br>Bangun</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                  <p><i>"Tidak ada kata mastah, kita semua sama-sama beljar"</i></p>
                   <div class="media">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
@@ -145,7 +162,7 @@
                     <img src="./gusti.jpeg" alt="">
                   </div>
                   <h3>Gustinof Hase<br>Putra</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                  <p><i>"Tidak ada yang mustahil jika kita mencoba"</i></p>
                   <div class="media">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
@@ -158,9 +175,9 @@
         </div>
         <div class="clear"></div>
         <div id="kontak" class="section-3">
-          <h1>Get In Touch</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sunt.</p>
-          <input type="email"id="" placeholder="Email">
+          <h1>Hubungi Kami</h1>
+          <p>Kamu Punya pertanyaan ? Silahkan tulis dibawah ini.</p>
+          <input type="email"id="" placeholder="Pertanyaan">
           <a href="#">Kirim</a>
         </div>
     </main>
@@ -168,10 +185,10 @@
       <div class="footer">
         <div class="footer-1">
           <h3>Progate C-15</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, aliquam nihil! Officiis deserunt quae excepturi?</p>
+          <p>Progate C-15 adalah perkumpulan semasa untuk belajar bersama</p>
         </div>
         <div  class="footer-1">
-          <h3>Contac Info</h3>
+          <h3>Info Kontak</h3>
           <ul>
             <li><i class="fa fa-phone"></i> +62 8xxx xxx</li>
             <li><i class="fa fa-phone"></i> +62 8xxx xxx</li>
@@ -179,11 +196,7 @@
           </ul>
         </div>
         <div class="footer-1">
-          <h3>Latest News</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati praesentium, veniam dolores deleniti eum facere?</p>
-        </div>
-        <div class="footer-1">
-          <h3>Follow Us</h3>
+          <h3>Ikuti Kami</h3>
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -193,5 +206,6 @@
         <p>&copy;Progate-C15 | 2020</p>
       </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
